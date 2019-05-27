@@ -40,7 +40,7 @@ class WelcomeScreen extends StatelessWidget {
                   itemBuilder: (BuildContext context, int index) {
                     return new Image.asset(
                       images[index],
-                      fit: BoxFit.scaleDown,
+                      fit: BoxFit.contain,
                     );
                   },
                   scale: 0.6,
