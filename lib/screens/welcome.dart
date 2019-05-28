@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
+import 'home.dart';
+
 const List<String> images = [
   "assets/intro2.png",
   "assets/intro1.png",
@@ -10,6 +12,8 @@ const List<String> images = [
 class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double _deviceHeight = MediaQuery.of(context).size.height;
+
     return new Scaffold(
         body: Container(
       color: Colors.white,
@@ -17,7 +21,7 @@ class WelcomeScreen extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(top: 30),
+              padding: EdgeInsets.only(top: _deviceHeight / 15),
             ),
             Text(
               "Buy your favourites",
@@ -79,7 +83,12 @@ class WelcomeScreen extends StatelessWidget {
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(25),
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()),
+                );
+              },
             ),
             Padding(
               padding: EdgeInsets.only(top: 10),
