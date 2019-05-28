@@ -4,9 +4,9 @@ A new shopping Flutter application.
 
 ## Demo Image
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/duythien0912/flutter_shopping/blob/master/demo_img/0.png)
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/duythien0912/flutter_shopping/blob/master/demo_img/1.png)
 
 
 ## Getting Started
