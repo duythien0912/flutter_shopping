@@ -62,7 +62,7 @@ class _DashBoardState extends State<DashBoard> {
             image: new AssetImage("assets/item1.png"),
             fit: BoxFit.cover,
           ),
-          color: Colors.blueAccent,
+          color: Colors.transparent,
           borderRadius: BorderRadius.all(
             Radius.circular(10.0),
           ),
